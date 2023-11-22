@@ -1,0 +1,52 @@
+#Todo List
+print('\n')
+print('\n')
+print('''                         IMPORTANT : INSTRUCTIONS
+
+    You need to choose rock,paper or scisscors and the computer will choose a
+    random option and you may will based on your luck''')
+print('\n')
+import random
+ques=int(input('Enter how many times do you want to play :  '))
+for i in range(ques):
+    choice=input('Choose either rock,paper or scissors : ')
+    print('\n')
+    print('The computer decides....')
+    things=['rock','paper','scissors']
+    computer=random.choice(things)
+    print('\n')
+    print('You chose',choice)
+    print('Computer chose',computer)
+    if choice == 'paper':
+        if computer =='paper':
+            print('Tie')
+            print('\n')
+        elif computer =='rock':
+            print('YOU WIN')
+            print('\n')
+        else:
+            print('YOU LOST')
+            print('\n')
+    elif choice == 'rock':
+        if computer =='rock':
+            print('Tie')
+            print('\n')
+        elif computer == 'scissors':
+            print('YOU WIN')
+            print('\n')
+        else :
+            print('YOU LOST')
+            print('\n')
+    if choice == 'scissors':
+        if computer =='scissors':
+            print('Tie')
+            print('\n')
+        elif computer == 'paper':
+            print('YOU WIN')
+            print('\n')
+        else :
+            print('YOU LOST')
+            print('\n')
+            print('_______________________________________________________________________')
+print('_______________________________________________________________________')
+            
