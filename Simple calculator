@@ -1,0 +1,46 @@
+#Simple Calculator
+def Addition(x,y):
+    return (x+y)
+def Subtraction(x,y):
+    return (x-y)
+def Multiplication(x,y):
+    return (x*y)
+def Division(x,y):
+    return (x/y)
+
+
+    print('''Select the operator from the below given list:
+      1. + (for addition)
+      2. - (for subtraction)
+      3. * (for multiplication)
+      4. / (for division)
+      5. q (for ending)''')
+while(True):
+    op=input('Select the valid operator : ')
+    if op=='q':
+        print('quit')
+        break
+    else:
+        x=float(input('Enter the first input : '))
+        y=float(input('Enter the second input : '))
+        
+        
+        if op=='-':
+            d=Subtraction(x,y)
+            print('The difference of {} and {} is {}'.format(x,y,d))
+        elif op=='*':
+            d=Multiplication(x,y)
+            print('The product of {} and {} is {}'.format(x,y,d))
+        elif op=='/':
+            d=Division(x,y)
+            print('The quotient of {} and {} is {}'.format(x,y,d))
+        elif op=='+':
+            d=Addition(x,y)
+            print('The sum of {} and {} is {}'.format(x,y,d))
+        
+        
+        else:
+            print('Invalid operator')
+            
+        
+    
