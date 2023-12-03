@@ -1,9 +1,9 @@
-#Todo List
+#Rock Paper Scissors
 print('\n')
 print('\n')
 print('''                         IMPORTANT : INSTRUCTIONS
 
-    You need to choose rock,paper or scisscors and the computer will choose a
+    You need to choose rock, paper, or scissors and the computer will choose a
     random option and you may will based on your luck''')
 print('\n')
 import random
